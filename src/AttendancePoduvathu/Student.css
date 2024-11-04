@@ -1,0 +1,15 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  margin-top: 30px;
+}
+
+.allPresentButton {
+  margin: 0.5rem;
+}
+.logButton {
+  margin: 0.5rem;
+}

@@ -1,0 +1,78 @@
+.StudentActual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 0.5rem;
+}
+
+
+.MarkerDetail {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  padding-left: 0.2rem; /* Align to the left */
+}
+
+.MarkerDetail p {
+  margin: 0;
+  font-weight: bolder;
+}
+
+/* MarkerButton for checkboxes styled as buttons */
+.MarkerButton {
+  display: flex;
+  flex-direction: row; /* Arrange buttons in a row */
+  align-items: center;
+}
+
+.checkbox {
+  display: none; /* Hide the default checkboxes */
+}
+
+.checkboxLabel {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  background-color: #e9ecf0;
+  border-style: solid;
+  border-color: black;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Change color on hover */
+.checkboxLabel:hover {
+  background-color: #0056b3;
+}
+
+/* Change color when checkbox is checked */
+.checkboxLabel.checked {
+  background-color: #28a745; /* Green for checked state */
+}
+
+@media (max-width: 600px) {
+  .StudentActual {
+    width: 100%; /* Ensure full width on mobile */
+    align-items: center;
+  }
+
+  .MarkerDetail {
+    width: 30%; /* Ensure detail section takes full width */
+  
+  }
+
+  .MarkerButton {
+    width: 70%; /* Ensure button container takes full width */
+    justify-content: center; /* Center checkboxes horizontally */
+  }
+
+  .checkboxLabel {
+    width: 100%; /* Make checkboxes full width for better accessibility */
+    margin: 0.5rem 0; /* Add vertical spacing */
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+}

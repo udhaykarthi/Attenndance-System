@@ -1,0 +1,374 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #dfeff5;
+  overflow-x: hidden;
+}
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Navigation {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fba834;
+}
+
+.Navigation > * {
+  margin: 0;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.Navigation h4 {
+  padding-bottom: 10px;
+}
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fba834;
+  width: 100vw;
+
+}
+.Nav > *{
+  margin: 0;
+  padding-top: 1rem;
+  text-align: center;
+}
+.navButtons{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.navButtons button{
+  padding: 0;
+  margin: 0;
+  width: 40%;
+  height: 3rem;
+  
+}
+.navLogo img{
+  width: 12rem;
+
+}
+
+.mainformDiv {
+  flex: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -70px;
+  flex-direction: column;
+}
+.mainformDiv h1 {
+  font-size: 2.5rem;
+}
+
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.selectorContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.selectorForm {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.selectorForm label {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.selectorForm select {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.selectorButton {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.selectorButton:hover {
+  background-color: #0056b3;
+}
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  margin-top: 30px;
+}
+
+.StudentActual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+/* MarkerDetail for student name and regno */
+.MarkerDetail {
+  display: flex;
+  flex-direction: column; /* Stack name and regno vertically */
+  align-items: flex-start; /* Align to the left */
+}
+
+.MarkerDetail p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+/* MarkerButton for checkboxes styled as buttons */
+.MarkerButton {
+  display: flex;
+  flex-direction: row; /* Arrange buttons in a row */
+  align-items: center;
+}
+
+.checkbox {
+  display: none; /* Hide the default checkboxes */
+}
+
+.checkboxLabel {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #e9ecf0;
+  border-style: solid;
+  border-color: black;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Change color on hover */
+.checkboxLabel:hover {
+  background-color: #0056b3;
+}
+
+/* Change color when checkbox is checked */
+.checkboxLabel.checked {
+  background-color: #28a745; /* Green for checked state */
+}
+
+.containerAttend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Scrollable {
+  width: 100vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  height: 40vh;
+  border-style: solid;
+  border-width: 2px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+.oneVal {
+  display: flex;
+  justify-content: space-between;
+}
+.oneVal p {
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .StudentActual {
+    flex-direction: column; /* Stack items vertically on mobile */
+    width: 100%; /* Ensure full width on mobile */
+  }
+
+  .MarkerDetail {
+    width: 100%; /* Ensure detail section takes full width */
+    margin-bottom: 1rem; /* Space between details and buttons */
+  }
+
+  .MarkerButton {
+    width: 100%; /* Ensure button container takes full width */
+    justify-content: center; /* Center checkboxes horizontally */
+  }
+
+  .checkboxLabel {
+    width: 100%; /* Make checkboxes full width for better accessibility */
+    margin: 0.5rem 0; /* Add vertical spacing */
+    padding: 1rem; /* Adjust padding for better tapping */
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+}
+
+.logButton {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logButton:hover {
+  background-color: #218838;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #dfeff5;
+}
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Navigation {
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fba834;
+}
+
+.Navigation > * {
+  margin: 0;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.Navigation h4 {
+  padding-bottom: 10px;
+}
+
+.mainformDiv {
+  flex: 1; /* Fill the remaining space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -70px;
+  flex-direction: column;
+}
+.mainformDiv h1 {
+  font-size: 3rem;
+}
+
+form {
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 30%;
+  padding: 2rem;
+  height: 40%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  width: 10rem;
+  border-radius: 15px;
+  height: 3rem;
+}

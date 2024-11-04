@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(135deg, #e6e9e6, #daf5de);
+}
+
+.selectorContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.selectorForm {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.selectorForm label {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.selectorForm select {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.selectorButton button {
+  align-self: center;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  width: 40%;
+  border-radius: 12px; /* Rounded square shape */
+  height: auto;
+  background-color: #00a553; /* Green background */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-width: 2px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+}
+
+.selectorButton:hover {
+  background-color: #008e47; /* Darker green on hover */
+  box-shadow: 0 0 10px rgba(0, 165, 83, 0.5); /* Glow effect */
+}
